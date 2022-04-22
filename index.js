@@ -1,4 +1,5 @@
 const Team = require("./lib/Team");
+const fs = require("fs");
 
 new Team().initializeBuild();
 
