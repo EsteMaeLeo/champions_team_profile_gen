@@ -1,3 +1,4 @@
+//generate Manager Card
 const generateManager = manager => {
   return `  <div class="col-3 shadow-lg p-3 mb-5 bg-body rounded"">
     <div class=" card">
@@ -47,8 +48,10 @@ const generateEngineer = engineer => {
   return htmlFinal;
 };
 
+//generate card for the intern
 const generateIntern = intern => {
   let htmlFinal = "";
+  //loop each intern object and each accumulate html
   Object.values(intern).forEach(int => {
     let htmlIntern = `<div class="col-3 shadow-lg p-3 mb-5 bg-body rounded"">
       <div class=" card">
@@ -71,6 +74,7 @@ const generateIntern = intern => {
   return htmlFinal;
 };
 
+//generate HTML index page with the information of the team
 const generateTeam = (manager, engineer, intern) => {
   return `
 <!DOCTYPE html>
